@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solo Zandonai</title>
+
+{% load static %}
+
+    <link rel="stylesheet" href="{% static 'core/styles.css' %}"/>
+</head>
+<body>
+
+<!----------------------------------Navbar---------------------------------------------------->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-danger p-2 bg-opacity-50">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img src="{% static 'core/img/logo.png' %}" class="img-flui" width="300px" height="94px" alt=""></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+       <!--------------elementos de la izquierda------------------->   
+       
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="{% url 'home' %}">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Página Solo Zandonai</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contactanos</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    
+<!----------------------------------Acaba navbar---------------------------------------------------->
+<!-----------------------------------Contenido------------------------------------------>      
+
+
+        <div class="card text-center">
+            <div class="row align-items-center">
+                <div class="col">
+                    <div class="card-body mt-lg-5">
+                      <h2 class="card-title">Resultado consulta estado del auto:</h5>
+                      <p class="card-text mt-lg-4">Estimado/a cliente, no hemos podido encontrar el auto. Por favor revise que esté bien escrita e inténtelo denuevo. Si el error persiste por favor contáctese con nosotros.</p>
+                      <a href="{% url 'home' %}" class="btn btn-primary mt-lg-2">Volver a intentar</a>
+                    </div>
+                    <div class="card-footer text-dark mt-lg-5">
+                      ¡Gracias por preferirnos!
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+<!----------------------------------Acaba contenido----------------------------------------------->
+
+<!-------------------------------- Footer ------------------------------------------------>
+<footer class="text-center text-lg-start bg-light ">
+  <!-- Section: texto -->
+  <section
+    class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom"
+  >
+    <!-- Left -->
+    <div class="mx-auto d-none d-lg-block">
+      <span>Ante cualquier inconveniente no dude en contactarse con nosotros:</span>
+    </div>
+    <!-- Left -->
+  </section>
+  <!-- Section: texto -->
+
+  <!-- Section: Links  -->
+  <section class="">
+    <div class="container text-center text-md-start mt-5">
+      <!-- Grid row -->
+      <div class="row mt-3">
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+          <!-- Content -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            <i class="fas fa-gem me-3"></i>Contacto
+          </h6>
+          <p><i class="fas fa-home me-3"></i> Oficina Balmaceda Nº4297</p>
+          <p>
+          <p><i class="fas fa-phone me-3"></i>+56 51 2 338043</p>
+          <p><i class="fas fa-print me-3"></i>+56 51 2 338044</p>
+          <p><i class="fas fa-print me-3"></i>+56 51 2 338047</p>
+        
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Contacto
+          </h6>
+          <p><i class="fas fa-home me-3"></i> Oficina Balmaceda Nº1351-B</p>
+          <p>
+          <p><i class="fas fa-phone me-3"></i>+56 51 2 214641</p>
+          <p><i class="fas fa-print me-3"></i>+56 51 2 228798</p>
+          <p><i class="fas fa-print me-3"></i>+56 51 2 229265</p>
+        </div>
+        <!-- Grid column -->
+      </div>
+      <!-- Grid row -->
+    </div>
+  </section>
+  <!-- Section: Links  -->
+
+  <!-- Copyright -->
+  <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+    © 2021 
+    <a class="text-reset fw-bold">Capstone project G5</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+<!-- Footer -->
+
+
+  <script src="{% static 'core/node_modules/bootstrap/dist/js/bootstrap.min.js' %}"></script>
+   
+</body>
+
+</html>
